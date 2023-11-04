@@ -1,0 +1,758 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "92C0E962-96E5-4347-9DBF-560916EFEC58"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "CECEB433-7921-4081-B091-2301CC6541BF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/BrasilApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "168"
+            endingLineNumber = "168"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "CECEB433-7921-4081-B091-2301CC6541BF - 8c74fcec7ac022db"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "CECEB433-7921-4081-B091-2301CC6541BF - 8c74fcec7ac022fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "260">
+               </Location>
+               <Location
+                  uuid = "CECEB433-7921-4081-B091-2301CC6541BF - 8c74fcec7ac022fa"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "276">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "18E6BE9D-2165-4274-9DD2-708A3D8C8A15"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/ViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "viewDidLoad()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "18E6BE9D-2165-4274-9DD2-708A3D8C8A15 - 834b719759085160"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "168">
+               </Location>
+               <Location
+                  uuid = "18E6BE9D-2165-4274-9DD2-708A3D8C8A15 - 834b719759085160"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.ViewController.viewDidLoad() -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/ViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "18"
+                  endingLineNumber = "18"
+                  offsetFromSymbolStart = "184">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/BrasilApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "196"
+            endingLineNumber = "196"
+            landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e507"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "136">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e507"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "120">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "132">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "196">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1476">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "200">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1488">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "124">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1316">
+               </Location>
+               <Location
+                  uuid = "A314D418-C9BF-4876-8197-65F2E8EBD461 - 98ff26af06a1e5a4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1336">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6CE791D4-F078-4141-BE8F-FF98FA50A349"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/BrasilApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "10"
+            endingLineNumber = "10"
+            landmarkName = "BrasilApiManager"
+            landmarkType = "14">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4A4D0DAD-C9BA-40F4-9CA5-1B7AF03BAFFB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/BrasilApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "13"
+            endingLineNumber = "13"
+            landmarkName = "fetchBank(bank:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "AA697B03-0236-4C97-B7DE-731C2A0A3C82"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/BrasilApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "183"
+            endingLineNumber = "183"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "AA697B03-0236-4C97-B7DE-731C2A0A3C82 - a1a4b1dce51a6f1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "604">
+               </Location>
+               <Location
+                  uuid = "AA697B03-0236-4C97-B7DE-731C2A0A3C82 - a1a4b1dce51a6f1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "AA697B03-0236-4C97-B7DE-731C2A0A3C82 - a1a4b1dce51a6f1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "AA697B03-0236-4C97-B7DE-731C2A0A3C82 - a1a4b1dce51a6f1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "AA697B03-0236-4C97-B7DE-731C2A0A3C82 - a1a4b1dce51a6f1c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "34"
+                  endingLineNumber = "34"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "7B87602A-5245-46C3-9B98-D45E50D35FEC"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/BrasilApiManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "7B87602A-5245-46C3-9B98-D45E50D35FEC - 98ff26af06a1e41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "940">
+               </Location>
+               <Location
+                  uuid = "7B87602A-5245-46C3-9B98-D45E50D35FEC - 98ff26af06a1e41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "876">
+               </Location>
+               <Location
+                  uuid = "7B87602A-5245-46C3-9B98-D45E50D35FEC - 98ff26af06a1e41f"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilBankData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/BrasilApiManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "872">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D4454BC7-2499-4E7A-A07B-821F0A3F657E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "D4454BC7-2499-4E7A-A07B-821F0A3F657E - c954bf2e88db4812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiCepManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "D4454BC7-2499-4E7A-A07B-821F0A3F657E - c954bf2e88db4812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiCepManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "488">
+               </Location>
+               <Location
+                  uuid = "D4454BC7-2499-4E7A-A07B-821F0A3F657E - c954bf2e88db4812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiCepManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "396">
+               </Location>
+               <Location
+                  uuid = "D4454BC7-2499-4E7A-A07B-821F0A3F657E - c954bf2e88db4812"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiCepManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "39"
+                  endingLineNumber = "39"
+                  offsetFromSymbolStart = "484">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "74761EF4-F5BA-498A-AAC3-1C4169C6F883"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "74761EF4-F5BA-498A-AAC3-1C4169C6F883 - e286520c6ad74114"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiCepManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;Swift.Array&lt;BrasilApi.BrasilCEPData&gt;&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "108">
+               </Location>
+               <Location
+                  uuid = "74761EF4-F5BA-498A-AAC3-1C4169C6F883 - 3008cd0190ec53ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiCepManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilCEPData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "160">
+               </Location>
+               <Location
+                  uuid = "74761EF4-F5BA-498A-AAC3-1C4169C6F883 - 3008cd0190ec53ba"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "BrasilApi.BrasilApiCepManager.parseJSON(Foundation.Data) -&gt; Swift.Optional&lt;BrasilApi.BrasilCEPData&gt;"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "52"
+                  endingLineNumber = "52"
+                  offsetFromSymbolStart = "856">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "23B5A5DE-FBF7-47E9-AC9D-2204CC9DAFC7"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "23B5A5DE-FBF7-47E9-AC9D-2204CC9DAFC7 - 72b3e36b64aca79c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiCnpjManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "400">
+               </Location>
+               <Location
+                  uuid = "23B5A5DE-FBF7-47E9-AC9D-2204CC9DAFC7 - 72b3e36b64aca79c"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 @Sendable (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in BrasilApi.BrasilApiCnpjManager.performRequest(with: Swift.String) -&gt; ()"
+                  moduleName = "BrasilApi"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danielwashingtonignacio/Desktop/BrasilApi/BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "488">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "DCDE0278-2898-497D-87FF-089F7D1B0B93"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "48"
+            endingLineNumber = "48"
+            landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "56EB004E-DB8D-4C1D-BDE5-123BEB5348EF"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelTaxas/BrasilApiTaxasManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "23"
+            endingLineNumber = "23"
+            landmarkName = "performRequest(with:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9E4C322C-5969-4254-83A2-38B42AB8A098"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelTaxas/BrasilApiTaxasManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
+            landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "24636DE5-71A8-4B68-A37A-BFF44308C6DB"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "49"
+            endingLineNumber = "49"
+            landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
