@@ -14,7 +14,7 @@ Através do Next.js, um framework utilizado por empresas como Marvel, Twitch, Ni
 
 Caso você esteja lendo esta versão de README, você está pegando o projeto num estágio extremamente inicial, porém empolgante, pois há várias coisas a serem definidas. Então caso queira contribuir, utilize as issues para entender quais pontos ainda não foram resolvidos, conversar conosco e contribuir tanto com idéias técnicas, quanto de quais APIs podem ser criadas.
 
-Veja mais detalhes sobre Como contribuir no arquivo CONTRIBUTING.md
+Veja mais detalhes sobre Como contribuir no arquivo CONTRIBUTING.md veja na pagina https://github.com/BrasilAPI/BrasilAPI#
 
 Termos de Uso
 
