@@ -7,16 +7,23 @@
 
 import Foundation
 
+protocol BrasilCepManagerDelegate {
+    func checkCep(_ cepManager: BrasilApiCepManager, cep: BrasilCEPData)
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiCepManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+
+    var delegate: BrasilCepManagerDelegate?
     
     func fetchCEP(CEP: Int) -> String {
-        let urlString = "\(apiURL)cep/v1/\(CEP)"
+        let urlString = "\(apiURL)\(Constants.cep)/v1/\(CEP)"
         return urlString
     }
     
     func fetchCEPV2(CEP: Int) -> String {
-        let urlString = "\(apiURL)cep/v2/\(CEP)"
+        let urlString = "\(apiURL)\(Constants.cep)/v2/\(CEP)"
         return urlString
     }
 
@@ -33,7 +40,7 @@ struct BrasilApiCepManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -55,7 +62,7 @@ struct BrasilApiCepManager {
             let decodedData = try decoder.decode(BrasilCEPData.self, from: brasilCepData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

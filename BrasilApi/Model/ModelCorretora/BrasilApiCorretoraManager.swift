@@ -7,18 +7,26 @@
 
 import Foundation
 
+protocol BrasilCorretoraManagerDelegate {
+    func checkCorretora(_ corretoraManager: BrasilApiCorretoraManager, corretora: [BrasilCorretoraData] )
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiCorretoraManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilCorretoraManagerDelegate?
     
     func fetchCorretoras() -> String {
-        let urlString = "\(apiURL)cvm/corretoras/v1/"
+        let urlString = "\(apiURL)\(Constants.corretoras)"
         return urlString
     }
     
     func fetchCorretorasByCNPJ(CNPJ: Int) -> String {
-        let urlString = "\(apiURL)cvm/corretoras/v1/\(CNPJ)"
+        let urlString = "\(apiURL)\(Constants.corretoras)\(CNPJ)"
         return urlString
     }
+
     
 
     func performRequest(with urlString: String) {
@@ -33,7 +41,7 @@ struct BrasilApiCorretoraManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -55,7 +63,7 @@ struct BrasilApiCorretoraManager {
             let decodedData = try decoder.decode([BrasilCorretoraData].self, from: brasilCorretoraData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

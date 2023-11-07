@@ -40,11 +40,12 @@
 		56A8E37D2AF5ADF600FF2E0A /* BrasilApiFipeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E37C2AF5ADF600FF2E0A /* BrasilApiFipeManager.swift */; };
 		56A8E37F2AF5AE5000FF2E0A /* BrasilApiFeriadosManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E37E2AF5AE5000FF2E0A /* BrasilApiFeriadosManager.swift */; };
 		56A8E3812AF5AEB100FF2E0A /* BrasilApiDDDManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E3802AF5AEB100FF2E0A /* BrasilApiDDDManager.swift */; };
-		56A8E3832AF5AF0600FF2E0A /* BrasilApiCptecData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E3822AF5AF0600FF2E0A /* BrasilApiCptecData.swift */; };
+		56A8E3832AF5AF0600FF2E0A /* BrasilApiCptecManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E3822AF5AF0600FF2E0A /* BrasilApiCptecManager.swift */; };
 		56A8E3852AF5B01F00FF2E0A /* BrasilApiCorretoraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E3842AF5B01F00FF2E0A /* BrasilApiCorretoraManager.swift */; };
 		56A8E3872AF5B08100FF2E0A /* BrasilApiCnpjManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E3862AF5B08100FF2E0A /* BrasilApiCnpjManager.swift */; };
 		56A8E3892AF5B0EB00FF2E0A /* BrasilApiCepManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E3882AF5B0EB00FF2E0A /* BrasilApiCepManager.swift */; };
 		56A8E38B2AF5B14C00FF2E0A /* BrasilApiBankManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56A8E38A2AF5B14C00FF2E0A /* BrasilApiBankManager.swift */; };
+		56DC69AE2AFAA7C40070FC0D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56DC69AD2AFAA7C40070FC0D /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,11 +103,12 @@
 		56A8E37C2AF5ADF600FF2E0A /* BrasilApiFipeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiFipeManager.swift; sourceTree = "<group>"; };
 		56A8E37E2AF5AE5000FF2E0A /* BrasilApiFeriadosManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiFeriadosManager.swift; sourceTree = "<group>"; };
 		56A8E3802AF5AEB100FF2E0A /* BrasilApiDDDManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiDDDManager.swift; sourceTree = "<group>"; };
-		56A8E3822AF5AF0600FF2E0A /* BrasilApiCptecData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiCptecData.swift; sourceTree = "<group>"; };
+		56A8E3822AF5AF0600FF2E0A /* BrasilApiCptecManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiCptecManager.swift; sourceTree = "<group>"; };
 		56A8E3842AF5B01F00FF2E0A /* BrasilApiCorretoraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiCorretoraManager.swift; sourceTree = "<group>"; };
 		56A8E3862AF5B08100FF2E0A /* BrasilApiCnpjManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiCnpjManager.swift; sourceTree = "<group>"; };
 		56A8E3882AF5B0EB00FF2E0A /* BrasilApiCepManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiCepManager.swift; sourceTree = "<group>"; };
 		56A8E38A2AF5B14C00FF2E0A /* BrasilApiBankManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasilApiBankManager.swift; sourceTree = "<group>"; };
+		56DC69AD2AFAA7C40070FC0D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +167,7 @@
 				566DBAE92AF2EC01005922ED /* Assets.xcassets */,
 				566DBAEB2AF2EC01005922ED /* LaunchScreen.storyboard */,
 				566DBAEE2AF2EC01005922ED /* Info.plist */,
+				56DC69AD2AFAA7C40070FC0D /* Constants.swift */,
 			);
 			path = BrasilApi;
 			sourceTree = "<group>";
@@ -248,7 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				56A8E3532AF5A60600FF2E0A /* BrasilCptecData.swift */,
-				56A8E3822AF5AF0600FF2E0A /* BrasilApiCptecData.swift */,
+				56A8E3822AF5AF0600FF2E0A /* BrasilApiCptecManager.swift */,
 			);
 			path = ModelCPTEC;
 			sourceTree = "<group>";
@@ -469,7 +472,7 @@
 				56A8E35A2AF5A83900FF2E0A /* BrasilFeriados.swift in Sources */,
 				56A8E37F2AF5AE5000FF2E0A /* BrasilApiFeriadosManager.swift in Sources */,
 				56A8E38B2AF5B14C00FF2E0A /* BrasilApiBankManager.swift in Sources */,
-				56A8E3832AF5AF0600FF2E0A /* BrasilApiCptecData.swift in Sources */,
+				56A8E3832AF5AF0600FF2E0A /* BrasilApiCptecManager.swift in Sources */,
 				56A8E3632AF5A9CE00FF2E0A /* BrasilISBNData.swift in Sources */,
 				56A8E3572AF5A80800FF2E0A /* BrasilDDDData.swift in Sources */,
 				56A8E3732AF5AC4400FF2E0A /* BrasilApiRegistroBrManager.swift in Sources */,
@@ -488,6 +491,7 @@
 				56A8E3792AF5AD5A00FF2E0A /* BrasilApiISBNManager.swift in Sources */,
 				56A8E3752AF5ACB600FF2E0A /* BrasilApiPixManager.swift in Sources */,
 				56A8E3712AF5ABF300FF2E0A /* BrasilApiTaxasManager.swift in Sources */,
+				56DC69AE2AFAA7C40070FC0D /* Constants.swift in Sources */,
 				566DBAE32AF2EBFE005922ED /* SceneDelegate.swift in Sources */,
 				566DBB142AF2EC33005922ED /* BrasilBankData.swift in Sources */,
 				56A8E35D2AF5A88400FF2E0A /* BrasilFIPEData.swift in Sources */,

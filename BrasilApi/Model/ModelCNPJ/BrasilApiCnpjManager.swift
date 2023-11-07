@@ -7,11 +7,18 @@
 
 import Foundation
 
+protocol BrasilCnpjManagerDelegate {
+    func checkCnpj(_ cnpjManager: BrasilApiCnpjManager, cnpj: BrasilCNPJData)
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiCnpjManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
     
-    func fetchCNPJ(CNJP: String) -> String {
-        let urlString = "\(apiURL)cnpj/v1/\(CNJP)"
+    var delegate: BrasilCnpjManagerDelegate?
+    
+    func fetchCNPJ(CNJP: Int) -> String {
+        let urlString = "\(apiURL)\(Constants.cnpj)\(CNJP)"
         return urlString
     }
 
@@ -27,7 +34,7 @@ struct BrasilApiCnpjManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -49,7 +56,7 @@ struct BrasilApiCnpjManager {
             let decodedData = try decoder.decode(BrasilCNPJData.self, from: brasilCnpjData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

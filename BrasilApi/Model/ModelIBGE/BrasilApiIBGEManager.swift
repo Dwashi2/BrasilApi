@@ -7,21 +7,29 @@
 
 import Foundation
 
+protocol BrasilIbgeManagerDelegate {
+    func checkIbge(_ ibgeManager: BrasilApiIBGEManager, ibge: BrasilIBGEData)
+    func checkIbgeArray(_ ibgeManager: BrasilApiIBGEManager, ibge: [BrasilIBGEData])
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiIBGEManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilIbgeManagerDelegate?
     
     func fetchMunicipios(Sigla: String) -> String {
-        let urlString = "\(apiURL)ibge/municipios/v1/\(Sigla)?providers=dados-abertos-br,gov,wikipedia"
+        let urlString = "\(apiURL)\(Constants.ibgeMunicipios)\(Sigla)?providers=dados-abertos-br,gov,wikipedia"
         return urlString
     }
     
     func fetchRetornaTodosOsEstados() -> String {
-        let urlString = "\(apiURL)ibge/uf/v1"
+        let urlString = "\(apiURL)\(Constants.ibgeEstados)"
         return urlString
     }
     
     func fetchInformacaoDeUmEstadoPorSigaOuCodigo(Code: Int) -> String {
-        let urlString = "\(apiURL)ibge/uf/v1/\(Code)"
+        let urlString = "\(apiURL)\(Constants.ibgeEstados)\(Code)"
         return urlString
     }
     
@@ -37,7 +45,7 @@ struct BrasilApiIBGEManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -59,7 +67,7 @@ struct BrasilApiIBGEManager {
             let decodedData = try decoder.decode([BrasilIBGEData].self, from: brasilIbgeData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }
@@ -76,7 +84,7 @@ struct BrasilApiIBGEManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -100,7 +108,7 @@ struct BrasilApiIBGEManager {
             let decodedData = try decoder.decode(BrasilIBGEData.self, from: brasilIbgeData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

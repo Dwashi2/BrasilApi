@@ -1,5 +1,5 @@
 //
-//  BrasilApiCptecData.swift
+//  BrasilApiCptecManager.swift
 //  BrasilApi
 //
 //  Created by Daniel Washington Ignacio on 03/11/23.
@@ -7,46 +7,54 @@
 
 import Foundation
 
-struct BrasilApiCptecData {
-    let apiURL = "https://brasilapi.com.br/api/"
+protocol BrasilCptecManagerDelegate {
+    func checkCptec(_ cptecManager: BrasilApiCptecManager, cptec: BrasilCptecData)
+    func checkCptecArray(_ cptecManager: BrasilApiCptecManager, cptec: [BrasilCptecData])
+    func didFailWithError(error: Error)
+}
+
+struct BrasilApiCptecManager {
+    let apiURL = Constants.url
+    
+    var delegate: BrasilCptecManagerDelegate?
     
     func fetchCptecListarLocalidades() -> String {
-        let urlString = "\(apiURL)cptec/v1/cidade"
+        let urlString = "\(apiURL)\(Constants.cptecCidade)"
         return urlString
     }
     
     func fetchCptecBuscarLocalidadesCityName(CityName: String) -> String {
-        let urlString = "\(apiURL)cptec/v1/cidade/\(CityName)"
+        let urlString = "\(apiURL)\(Constants.cptecCidade)\(CityName)"
         return urlString
     }
     
     func fetchCptecCondicoesAtuaisNasCapitais() -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/capital"
+        let urlString = "\(apiURL)\(Constants.cptecClima)capital"
         return urlString
     }
     
     func fetchCptecCondicoesAtuaisNosAeroportos(CodigoICAO: String) -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/aeroporto/\(CodigoICAO)"
+        let urlString = "\(apiURL)\(Constants.cptecClima)aeroporto/\(CodigoICAO)"
         return urlString
     }
     
     func fetchCptecPrevisaoMeteologicaParaUmaCidade(CityCode: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/previsao/\(CityCode)"
+        let urlString = "\(apiURL)\(Constants.cptecClima)previsao/\(CityCode)"
         return urlString
     }
     
     func fetchCptecPrevisaoMeteologicaParaAteSeisDias(CityCode: Int, Days: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/previsao/\(CityCode)/\(Days)"
+        let urlString = "\(apiURL)\(Constants.cptecClima)previsao/\(CityCode)/\(Days)"
         return urlString
     }
 
     func fetchCptecPrevisaoOceanica(CityCode: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/ondas/\(CityCode)"
+        let urlString = "\(apiURL)\(Constants.cptecOndas)\(CityCode)"
         return urlString
     }
     
     func fetchCptecPrevisaoOceanicaParaAteSeisDias(CityCode: Int, Days: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/ondas/\(CityCode)/\(Days)"
+        let urlString = "\(apiURL)\(Constants.cptecOndas)\(CityCode)/\(Days)"
         return urlString
     }
 
@@ -62,7 +70,7 @@ struct BrasilApiCptecData {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -83,7 +91,7 @@ struct BrasilApiCptecData {
             let decodedData = try decoder.decode([BrasilCptecData].self, from: brasilCptecData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }
@@ -102,7 +110,7 @@ struct BrasilApiCptecData {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -123,7 +131,7 @@ struct BrasilApiCptecData {
             let decodedData = try decoder.decode(BrasilCptecData.self, from: brasilCptecData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

@@ -7,16 +7,23 @@
 
 import Foundation
 
+protocol BrasilBankManagerDelegate {
+    func checkBranks(_ bankManager: BrasilApiBankManager, bank: [BrasilBankData])
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiBankManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilBankManagerDelegate?
     
     func fetchBank(bank: String) -> String {
-        let urlString = "\(apiURL)banks/v1"
+        let urlString = "\(apiURL)\(Constants.banks)"
         return urlString
     }
     
     func fetchbankByCode(code: Int) -> String {
-        let urlString = "\(apiURL)banks/v1/\(code)"
+        let urlString = "\(apiURL)\(Constants.banks)\(code)"
         return urlString
     }
 
@@ -32,7 +39,7 @@ struct BrasilApiBankManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -54,7 +61,7 @@ struct BrasilApiBankManager {
             let decodedData = try decoder.decode([BrasilBankData].self, from: brasilBankData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

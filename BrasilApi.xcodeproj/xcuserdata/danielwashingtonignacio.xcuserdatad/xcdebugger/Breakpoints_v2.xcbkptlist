@@ -511,8 +511,8 @@
             filePath = "BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "performRequest(with:)"
             landmarkType = "7">
             <Locations>
@@ -589,8 +589,8 @@
             filePath = "BrasilApi/Model/ModelCEP/BrasilApiCepManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "parseJSON(_:)"
             landmarkType = "7">
             <Locations>
@@ -652,8 +652,8 @@
             filePath = "BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "33"
-            endingLineNumber = "33"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "performRequest(with:)"
             landmarkType = "7">
             <Locations>
@@ -700,8 +700,8 @@
             filePath = "BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
+            startingLineNumber = "55"
+            endingLineNumber = "55"
             landmarkName = "parseJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -716,8 +716,8 @@
             filePath = "BrasilApi/Model/ModelTaxas/BrasilApiTaxasManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "31"
+            endingLineNumber = "31"
             landmarkName = "performRequest(with:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -732,8 +732,8 @@
             filePath = "BrasilApi/Model/ModelTaxas/BrasilApiTaxasManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
             landmarkName = "parseJSON(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -748,9 +748,25 @@
             filePath = "BrasilApi/Model/ModelCNPJ/BrasilApiCnpjManager.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "49"
-            endingLineNumber = "49"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "parseJSON(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "533EA3C3-162C-4778-AB4D-1BEBD8B864CA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BrasilApi/Model/ModelTaxas/BrasilApiTaxasManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
+            landmarkName = "parseJSONSigla(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

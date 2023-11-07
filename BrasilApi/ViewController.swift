@@ -25,8 +25,8 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        var test = brasilApiCnpjManager.fetchCNPJ(CNJP: "19131243000197")
-        brasilApiCnpjManager.performRequest(with: test)
+        var test = brasilApiTaxasManager.fetchBuscasInformacoesDeUmaTaxaPorNomeOuSigla(sigla: "SELIC")
+        brasilApiTaxasManager.performRequestSigla(with: test)
         
         
     }

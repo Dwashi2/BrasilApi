@@ -7,16 +7,24 @@
 
 import Foundation
 
+protocol BrasilTaxasManagerDelegate {
+    func checkTaxas(_ taxasManager: BrasilApiTaxasManager, taxas: [BrasilTaxasData])
+    func checkTaxas(_ taxasManager: BrasilApiTaxasManager, taxas: BrasilTaxasData )
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiTaxasManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilTaxasManagerDelegate?
     
     func fetchRetornaAsTaxasDeJurosEIndicesOficiais() -> String {
-        let urlString = "\(apiURL)taxas/v1"
+        let urlString = "\(apiURL)\(Constants.taxas)"
         return urlString
     }
     
     func fetchBuscasInformacoesDeUmaTaxaPorNomeOuSigla(sigla: String) -> String {
-        let urlString = "\(apiURL)taxas/v1/\(sigla)"
+        let urlString = "\(apiURL)\(Constants.taxas)\(sigla)"
         return urlString
     }
 
@@ -32,7 +40,7 @@ struct BrasilApiTaxasManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -73,7 +81,7 @@ struct BrasilApiTaxasManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -95,7 +103,7 @@ struct BrasilApiTaxasManager {
             let decodedData = try decoder.decode(BrasilTaxasData.self, from: brasilTaxasData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

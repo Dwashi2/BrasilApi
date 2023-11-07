@@ -7,11 +7,18 @@
 
 import Foundation
 
+protocol BrasilRegistroBrManagerDelegate{
+    func checkRegistroBr(_ registroBrManager: BrasilApiRegistroBrManager, registroBr: BrasilRegistroBrData)
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiRegistroBrManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilRegistroBrManagerDelegate?
     
     func fetchAvaliaOStatusDeUmDominioBR(domain: String) -> String {
-        let urlString = "\(apiURL)registrobr/v1/\(domain)"
+        let urlString = "\(apiURL)\(Constants.registroBr)\(domain)"
         return urlString
     }
     
@@ -28,7 +35,7 @@ struct BrasilApiRegistroBrManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -50,7 +57,7 @@ struct BrasilApiRegistroBrManager {
             let decodedData = try decoder.decode(BrasilRegistroBrData.self, from: brasilRegistroBrData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

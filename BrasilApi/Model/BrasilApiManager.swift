@@ -8,160 +8,160 @@
 import Foundation
 
 struct BrasilApiManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
     
     func fetchBank(bank: String) -> String {
-        let urlString = "\(apiURL)banks/v1"
+        let urlString = "\(apiURL)\(Constants.banks)"
         return urlString
     }
     
     func fetchbankByCode(code: Int) -> String {
-        let urlString = "\(apiURL)banks/v1/\(code)"
+        let urlString = "\(apiURL)\(Constants.banks)\(code)"
         return urlString
     }
     
     func fetchCEP(CEP: Int) -> String {
-        let urlString = "\(apiURL)cep/v1/\(CEP)"
+        let urlString = "\(apiURL)\(Constants.cep)/v1/\(CEP)"
         return urlString
     }
     
     func fetchCEPV2(CEP: Int) -> String {
-        let urlString = "\(apiURL)cep/v2/\(CEP)"
+        let urlString = "\(apiURL)\(Constants.cep)/v2/\(CEP)"
         return urlString
     }
     
     func fetchCNPJ(CNJP: Int) -> String {
-        let urlString = "\(apiURL)cnpj/v1/\(CNJP)"
+        let urlString = "\(apiURL)\(Constants.cnpj)\(CNJP)"
         return urlString
     }
     
     func fetchCorretoras() -> String {
-        let urlString = "\(apiURL)cvm/corretoras/v1/"
+        let urlString = "\(apiURL)\(Constants.corretoras)"
         return urlString
     }
     
     func fetchCorretorasByCNPJ(CNPJ: Int) -> String {
-        let urlString = "\(apiURL)cvm/corretoras/v1/\(CNPJ)"
+        let urlString = "\(apiURL)\(Constants.corretoras)\(CNPJ)"
         return urlString
     }
     
     func fetchCptecListarLocalidades() -> String {
-        let urlString = "\(apiURL)cptecv1/cidade"
+        let urlString = "\(apiURL)\(Constants.cptecCidade)"
         return urlString
     }
     
     func fetchCptecBuscarLocalidadesCityName(CityName: String) -> String {
-        let urlString = "\(apiURL)cptec/v1/cidade/\(CityName)"
+        let urlString = "\(apiURL)\(Constants.cptecCidade)\(CityName)"
         return urlString
     }
     
     func fetchCptecCondicoesAtuaisNasCapitais() -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/capital"
+        let urlString = "\(apiURL)\(Constants.cptecClima)capital"
         return urlString
     }
     
     func fetchCptecCondicoesAtuaisNosAeroportos(CodigoICAO: String) -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/aeroporto/\(CodigoICAO)"
+        let urlString = "\(apiURL)\(Constants.cptecClima)aeroporto/\(CodigoICAO)"
         return urlString
     }
     
     func fetchCptecPrevisaoMeteologicaParaUmaCidade(CityCode: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/previsao/\(CityCode)"
+        let urlString = "\(apiURL)\(Constants.cptecClima)previsao/\(CityCode)"
         return urlString
     }
     
     func fetchCptecPrevisaoMeteologicaParaAteSeisDias(CityCode: Int, Days: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/clima/previsao/\(CityCode)/\(Days)"
+        let urlString = "\(apiURL)\(Constants.cptecClima)previsao/\(CityCode)/\(Days)"
         return urlString
     }
 
     func fetchCptecPrevisaoOceanica(CityCode: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/ondas/\(CityCode)"
+        let urlString = "\(apiURL)\(Constants.cptecOndas)\(CityCode)"
         return urlString
     }
     
     func fetchCptecPrevisaoOceanicaParaAteSeisDias(CityCode: Int, Days: Int) -> String {
-        let urlString = "\(apiURL)cptec/v1/ondas/\(CityCode)/\(Days)"
+        let urlString = "\(apiURL)\(Constants.cptecOndas)\(CityCode)/\(Days)"
         return urlString
     }
     
     func fetchEstadoEListaDeCidadesPorDDD(DDD: Int) -> String {
-        let urlString = "\(apiURL)ddd/v1/\(DDD)"
+        let urlString = "\(apiURL)\(Constants.ddd)\(DDD)"
         return urlString
     }
     
     func fetchFeriadosNacionais(Ano: Int) -> String {
-        let urlString = "\(apiURL)feriados/v1/\(Ano)"
+        let urlString = "\(apiURL)\(Constants.feriados)\(Ano)"
         return urlString
     }
     
     func fetchListarMarcasDeVeiculosReferenteAoTipo(TipoVeiculo: String) -> String {
-        let urlString = "\(apiURL)fipe/marcas/v1/\(TipoVeiculo)"
+        let urlString = "\(apiURL)\(Constants.fipeMarcas)\(TipoVeiculo)"
         return urlString
     }
     
     func fetchConstultaPreco(CodigoFipe: Int) -> String {
-        let urlString = "\(apiURL)fipe/preco/v1/\(CodigoFipe)"
+        let urlString = "\(apiURL)\(Constants.fipePreco)\(CodigoFipe)"
         return urlString
     }
     
     func fetchListaTabelasDeReferenciaExistentes() -> String {
-        let urlString = "\(apiURL)fipe/tabelas/v1"
+        let urlString = "\(apiURL)\(Constants.fipeTabelas)"
         return urlString
     }
     
     func fetchMunicipios(Sigla: String) -> String {
-        let urlString = "\(apiURL)ibge/municipios/v1/\(Sigla)?providers=dados-abertos-br,gov,wikipedia"
+        let urlString = "\(apiURL)\(Constants.ibgeMunicipios)\(Sigla)?providers=dados-abertos-br,gov,wikipedia"
         return urlString
     }
     
     func fetchRetornaTodosOsEstados() -> String {
-        let urlString = "\(apiURL)ibge/uf/v1"
+        let urlString = "\(apiURL)\(Constants.ibgeEstados)"
         return urlString
     }
     
     func fetchInformacaoDeUmEstadoPorSigaOuCodigo(Code: Int) -> String {
-        let urlString = "\(apiURL)ibge/uf/v1/\(Code)"
+        let urlString = "\(apiURL)\(Constants.ibgeEstados)\(Code)"
         return urlString
     }
     
     func fetchInformacaoSobreOLivroAPartirDoISBN(isbn: Int) -> String {
-        let urlString = "\(apiURL)isbn/v1/\(isbn)"
+        let urlString = "\(apiURL)\(Constants.isbn)\(isbn)"
         return urlString
     }
     
     func fetchInformacaoDeTodosOsNCM() -> String {
-        let urlString = "\(apiURL)ncm/v1"
+        let urlString = "\(apiURL)\(Constants.ncm)"
         return urlString
     }
     
     func fetchIPesquisaPorNCM(code: Int) -> String {
-        let urlString = "\(apiURL)ncm/v1?search=\(code)"
+        let urlString = "\(apiURL)\(Constants.ncm)?search=\(code)"
         return urlString
     }
     
     func fetchIBuscaNCMPorCodigo(code: Int) -> String {
-        let urlString = "\(apiURL)ncm/v1/\(code)"
+        let urlString = "\(apiURL)\(Constants.ncm)/\(code)"
         return urlString
     }
 
     func fetchRetornaTodosOsParticipantesDoPIXNoDiaAtualOuAnterior() -> String {
-        let urlString = "\(apiURL)pix/v1/participantes"
+        let urlString = "\(apiURL)\(Constants.pix)"
         return urlString
     }
     
     func fetchAvaliaOStatusDeUmDominioBR(domain: String) -> String {
-        let urlString = "\(apiURL)registrobr/v1/\(domain)"
+        let urlString = "\(apiURL)\(Constants.registroBr)\(domain)"
         return urlString
     }
     
     func fetchRetornaAsTaxasDeJurosEIndicesOficiais() -> String {
-        let urlString = "\(apiURL)taxas/v1"
+        let urlString = "\(apiURL)\(Constants.taxas)"
         return urlString
     }
     
     func fetchBuscasInformacoesDeUmaTaxaPorNomeOuSigla(sigla: String) -> String {
-        let urlString = "\(apiURL)taxas/v1/\(sigla)"
+        let urlString = "\(apiURL)\(Constants.taxas)\(sigla)"
         return urlString
     }
 

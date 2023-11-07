@@ -7,11 +7,18 @@
 
 import Foundation
 
+protocol BrasilDddManagerDelegate {
+    func checkDdd(_ dddManager: BrasilApiDDDManager, ddd: BrasilDDDData)
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiDDDManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
     
-    func fetchEstadoEListaDeCidadesPorDDD(ddd: Int) -> String {
-        let urlString = "\(apiURL)ddd/v1/\(ddd)"
+    var delegate: BrasilDddManagerDelegate?
+    
+    func fetchEstadoEListaDeCidadesPorDDD(DDD: Int) -> String {
+        let urlString = "\(apiURL)\(Constants.ddd)\(DDD)"
         return urlString
     }
 
@@ -28,7 +35,7 @@ struct BrasilApiDDDManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -50,7 +57,7 @@ struct BrasilApiDDDManager {
             let decodedData = try decoder.decode(BrasilDDDData.self, from: brasilDDDData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

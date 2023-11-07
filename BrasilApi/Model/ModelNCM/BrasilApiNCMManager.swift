@@ -7,21 +7,29 @@
 
 import Foundation
 
+protocol BrasilNcmManagerDelegate {
+    func checkNcm(_ ncmManager: BrasilApiNCMManager, ncm: BrasilNCMData)
+    func checkNcmArray(_ ncmManager: BrasilApiNCMManager, ncm: [BrasilNCMData])
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiNCMManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilNcmManagerDelegate?
     
     func fetchInformacaoDeTodosOsNCM() -> String {
-        let urlString = "\(apiURL)ncm/v1"
+        let urlString = "\(apiURL)\(Constants.ncm)"
         return urlString
     }
     
-    func fetchIPesquisaPorNCM(code: String) -> String {
-        let urlString = "\(apiURL)ncm/v1?search=\(code)"
+    func fetchIPesquisaPorNCM(code: Int) -> String {
+        let urlString = "\(apiURL)\(Constants.ncm)?search=\(code)"
         return urlString
     }
     
-    func fetchIBuscaNCMPorCodigo(code: String) -> String {
-        let urlString = "\(apiURL)ncm/v1/\(code)"
+    func fetchIBuscaNCMPorCodigo(code: Int) -> String {
+        let urlString = "\(apiURL)\(Constants.ncm)/\(code)"
         return urlString
     }
 
@@ -37,7 +45,7 @@ struct BrasilApiNCMManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -59,7 +67,7 @@ struct BrasilApiNCMManager {
             let decodedData = try decoder.decode([BrasilNCMData].self, from: brasilNCMData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }
@@ -76,7 +84,7 @@ struct BrasilApiNCMManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -98,7 +106,7 @@ struct BrasilApiNCMManager {
             let decodedData = try decoder.decode(BrasilNCMData.self, from: brasilNCMData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

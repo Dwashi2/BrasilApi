@@ -7,21 +7,28 @@
 
 import Foundation
 
+protocol BrasilFipeManagerDelegate {
+    func checkFipe(_ fipeManager: BrasilApiFipeManager, fipe: [BrasilFIPEData])
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiFipeManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilFipeManagerDelegate?
     
     func fetchListarMarcasDeVeiculosReferenteAoTipo(TipoVeiculo: String) -> String {
-        let urlString = "\(apiURL)fipe/marcas/v1/\(TipoVeiculo)"
+        let urlString = "\(apiURL)\(Constants.fipeMarcas)\(TipoVeiculo)"
         return urlString
     }
     
-    func fetchConstultaPreco(CodigoFipe: String) -> String {
-        let urlString = "\(apiURL)fipe/preco/v1/\(CodigoFipe)"
+    func fetchConstultaPreco(CodigoFipe: Int) -> String {
+        let urlString = "\(apiURL)\(Constants.fipePreco)\(CodigoFipe)"
         return urlString
     }
     
     func fetchListaTabelasDeReferenciaExistentes() -> String {
-        let urlString = "\(apiURL)fipe/tabelas/v1"
+        let urlString = "\(apiURL)\(Constants.fipeTabelas)"
         return urlString
     }
 
@@ -38,7 +45,7 @@ struct BrasilApiFipeManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -60,7 +67,7 @@ struct BrasilApiFipeManager {
             let decodedData = try decoder.decode([BrasilFIPEData].self, from: brasilFipeData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

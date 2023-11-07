@@ -7,11 +7,18 @@
 
 import Foundation
 
+protocol BrasilPixManagerDelegate {
+    func checkPix(_ pixManager: BrasilApiPixManager, pix: [BrasilPIXData])
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiPixManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilPixManagerDelegate?
 
     func fetchRetornaTodosOsParticipantesDoPIXNoDiaAtualOuAnterior() -> String {
-        let urlString = "\(apiURL)pix/v1/participants"
+        let urlString = "\(apiURL)\(Constants.pix)"
         return urlString
     }
 
@@ -27,7 +34,7 @@ struct BrasilApiPixManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -49,7 +56,7 @@ struct BrasilApiPixManager {
             let decodedData = try decoder.decode([BrasilPIXData].self, from: brasilPixData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

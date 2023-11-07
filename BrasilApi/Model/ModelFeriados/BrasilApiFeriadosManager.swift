@@ -7,11 +7,18 @@
 
 import Foundation
 
+protocol BrasilFeriadosManagerDelegate {
+    func checkFeriados(_ feriadosManager: BrasilApiFeriadosManager, feriados: [BrasilFeriadosData])
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiFeriadosManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilFeriadosManagerDelegate?
     
     func fetchFeriadosNacionais(Ano: Int) -> String {
-        let urlString = "\(apiURL)feriados/v1/\(Ano)"
+        let urlString = "\(apiURL)\(Constants.feriados)\(Ano)"
         return urlString
     }
 
@@ -28,7 +35,7 @@ struct BrasilApiFeriadosManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -50,7 +57,7 @@ struct BrasilApiFeriadosManager {
             let decodedData = try decoder.decode([BrasilFeriadosData].self, from: brasilFeriadoData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }

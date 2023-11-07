@@ -7,11 +7,18 @@
 
 import Foundation
 
+protocol BrasilIsbnManagerDelegate {
+    func checkIsbn(_ isbnManager: BrasilApiISBNManager, isbn: BrasilISBNData)
+    func didFailWithError(error: Error)
+}
+
 struct BrasilApiISBNManager {
-    let apiURL = "https://brasilapi.com.br/api/"
+    let apiURL = Constants.url
+    
+    var delegate: BrasilIsbnManagerDelegate?
     
     func fetchInformacaoSobreOLivroAPartirDoISBN(isbn: Int) -> String {
-        let urlString = "\(apiURL)isbn/v1/\(isbn)"
+        let urlString = "\(apiURL)\(Constants.isbn)\(isbn)"
         return urlString
     }
 
@@ -27,7 +34,7 @@ struct BrasilApiISBNManager {
             //MARK: - 3. GIVE THE SESSION TASK
             let task = session.dataTask(with: url) { (data, response, error) in
                 if error != nil {
-                    print(error)
+                    delegate?.didFailWithError(error: error!)
                     return
                 }
                 if let safeData = data {
@@ -49,7 +56,7 @@ struct BrasilApiISBNManager {
             let decodedData = try decoder.decode(BrasilISBNData.self, from: brasilIsbnData)
             return decodedData
         } catch {
-            print(error)
+            delegate?.didFailWithError(error: error)
             return nil
         }
     }
